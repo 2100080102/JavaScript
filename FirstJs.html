@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<head>
+<script>
+    function wordblank(mynoun, myadj, myverb, myadverb){
+        var result="";
+        result += "The " + myadj +" " +mynoun + " " + myverb +" "+ myadverb;
+        return result;
+    }
+    // console.log(wordblank("dog","big","ran","quickly"));
+    //the output will be in th console tab 
+
+    // var ourArray = ["Stimpson","j","cat"];
+    // ourArray.push(["Happy","joy"]); //adds the elements into the array at last
+    // ourArray.pop(); //deletes the element in the array
+    // ourArray.shift(); //similar to pop but deletes the element in the begining of the array
+    // ourArray.unshift("Happy"); //similar to push function adds element in the begining of the array
+    // console.log(ourArray);
+
+    var myglobal = 10; //a global variable - declared outside the function block, can be used inside and outside the function block
+    function global1(){
+        oopglobal = 5; //the "var" keyword is not used here because that will scoped to that specific function
+        //if we use var keyword it becomes global automatically, we will nto be able to access it in the another function
+        // if we do not use the "var" keyword then we will be able to access it in the whole code
+    }
+    function global2(){
+        var out = "";
+        if(typeof myglobal!= "undefined"){
+            out+="myglobal: "+myglobal+"\n";
+        }
+        if (typeof oopglobal != "undefined"){
+            out += "oopglobal: "+oopglobal;
+        }
+        console.log(out);
+    }
+    global1();
+    global2();
+
+    
+</script>
+</head>
+<body>
+    <h1>Hello Javascript</h1>
+</body>
