@@ -915,7 +915,7 @@ footer a i{
         width: 300px;
     }
     .info-about1,.info-about2,.info-about3{
-        display: none;
+        display: inline;
     }
     .img-about p{
         font-size: 1rem;
